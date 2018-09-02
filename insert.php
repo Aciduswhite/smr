@@ -16,7 +16,7 @@ $date = date("Y-m-d H:i:s");
     //-posicion
     //-fecha
 
-$ins = $pdo->prepare('INSERT INTO dispositivo(imei,temperatura,ph,posicion) VALUES(?,?,?,?)');
-$ins->execute(array($imei,$temperatura,$ph,$geo));
+$ins = $pdo->prepare('INSERT INTO dispositivo(imei,temperatura,ph,posicion,fecha) VALUES(?,?,?,?,?)');
+$ins->execute(array($imei,$temperatura,$ph,$geo,$date));
 
 ?>

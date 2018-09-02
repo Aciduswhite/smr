@@ -20,6 +20,7 @@ $result = $stm->fetchall(PDO::FETCH_OBJ);
              <th>TEMPERATURA</th>
              <th>PH</th>
              <th>LOCALIZACION</th>
+             <th>FECHA</th>
          </tr>
      </thead>
      <tbody>
@@ -30,6 +31,7 @@ $result = $stm->fetchall(PDO::FETCH_OBJ);
              <td><?php echo $value->temperatura; ?></td>
              <td><?php echo $value->ph; ?></td>
              <td><?php echo $value->posicion; ?></td>
+             <td><?php echo $value->fecha; ?></td>
          </tr>
          <?php } ?>
      </tbody>
