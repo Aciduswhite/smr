@@ -29,7 +29,7 @@ $result = $stm->fetchall(PDO::FETCH_OBJ);
              <td><?php echo $value->imei; ?></td>
              <td><?php echo $value->temperatura; ?></td>
              <td><?php echo $value->ph; ?></td>
-             <td><?php echo $value->localizacion; ?></td>
+             <td><?php echo $value->posicion; ?></td>
          </tr>
          <?php } ?>
      </tbody>
